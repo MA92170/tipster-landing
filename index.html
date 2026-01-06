@@ -14,7 +14,7 @@
 <body class="bg-slate-950 text-slate-100 antialiased">
   <!-- Navbar -->
   <header class="sticky top-0 z-20 border-b border-white/10 bg-slate-800/90 backdrop-blur">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
       <div class="flex items-center gap-2">
         <!-- Logo Tipster -->
         <img
@@ -27,6 +27,7 @@
         </span>
       </div>
 
+      <!-- Desktop nav -->
       <div class="hidden items-center gap-6 text-sm md:flex">
         <a href="#concept" class="hover:text-lime-300 transition">Concept</a>
         <a href="#features" class="hover:text-lime-300 transition">Fonctionnalités</a>
@@ -39,41 +40,59 @@
           Rejoindre la communauté
         </a>
       </div>
+
+      <!-- Mobile nav (cta rapides) -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a
+          href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-full bg-lime-400 px-3 py-1 text-[11px] font-semibold text-slate-950"
+        >
+          Questionnaire
+        </a>
+        <a
+          href="#instagram"
+          class="rounded-full border border-white/40 px-3 py-1 text-[11px] text-slate-100"
+        >
+          Insta
+        </a>
+      </div>
     </nav>
   </header>
 
   <main class="mx-auto max-w-6xl px-4">
     <!-- Hero -->
-    <section class="grid gap-12 py-16 md:grid-cols-2 md:py-20">
-      <div class="flex flex-col justify-center gap-6">
-        <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200 w-fit">
+    <section class="grid gap-10 md:gap-12 py-12 md:grid-cols-2 md:py-20">
+      <div class="flex flex-col justify-center gap-6 text-center md:text-left items-center md:items-start">
+        <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] text-slate-200 w-fit">
           🎓 Lancement à Paris – construit avec les étudiants
         </p>
 
-        <h1 class="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+        <h1 class="max-w-xl text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
           Marre de payer
           <span class="text-lime-400 font-bold">14&nbsp;€</span>
           ton dej tous les midis à Paris&nbsp;?
         </h1>
 
-        <p class="text-sm text-slate-300 sm:text-base">
+        <p class="max-w-xl text-sm text-slate-300 sm:text-base">
           Tipster recense les <span class="font-semibold text-lime-300">menus étudiants & bons plans food</span>
           autour de ton campus, sur une carte simple à utiliser.
         </p>
 
-        <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div class="flex flex-col gap-3 items-center justify-center sm:flex-row sm:justify-start sm:items-center">
           <!-- Bouton vers questionnaire Google Forms -->
           <a
             href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-full bg-lime-400 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-lime-400/30 hover:bg-lime-300 transition"
+            class="inline-flex items-center justify-center rounded-full bg-lime-400 px-6 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-lime-400/30 hover:bg-lime-300 transition w-full sm:w-auto"
           >
             🚨 Répondre au questionnaire (1 min)
           </a>
           <a
             href="#instagram"
-            class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-medium text-slate-100 hover:border-lime-300 hover:text-lime-300 transition"
+            class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-2 text-sm font-medium text-slate-100 hover:border-lime-300 hover:text-lime-300 transition w-full sm:w-auto"
           >
             Rejoindre la communauté
           </a>
@@ -85,35 +104,35 @@
       </div>
 
       <!-- Mockup téléphone -->
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center mt-8 md:mt-0">
         <div class="relative">
           <div
-            class="mx-auto h-[480px] w-[260px] rounded-[2.5rem] border border-white/10 bg-slate-900/90 p-4 shadow-2xl shadow-lime-400/10"
+            class="mx-auto h-[420px] w-[230px] sm:h-[480px] sm:w-[260px] rounded-[2.5rem] border border-white/10 bg-slate-900/90 p-4 shadow-2xl shadow-lime-400/10"
           >
             <!-- Notch -->
-            <div class="mx-auto mb-4 h-6 w-32 rounded-full bg-slate-800"></div>
+            <div class="mx-auto mb-4 h-6 w-28 sm:w-32 rounded-full bg-slate-800"></div>
 
             <!-- Header app -->
-            <div class="flex items-center justify-between text-xs text-slate-300 mb-3">
-              <span class="font-medium">Paris 5 – Jussieu</span>
+            <div class="flex items-center justify-between text-[11px] text-slate-300 mb-3">
+              <span class="font-medium truncate">Paris 5 – Jussieu</span>
               <span class="rounded-full bg-white/5 px-2 py-0.5 text-[10px]">
                 ⩽ 8&nbsp;€
               </span>
             </div>
 
             <!-- Mini carte avec image réelle -->
-            <div class="mb-4 h-28 rounded-2xl relative overflow-hidden">
+            <div class="mb-4 h-24 sm:h-28 rounded-2xl relative overflow-hidden">
               <img
                 src="tipster-mini-map.png"
                 alt="Mini carte Tipster autour du campus"
                 class="h-full w-full object-cover"
               />
               <!-- Pins -->
-              <div class="absolute left-10 top-6 h-6 w-6 rounded-full bg-lime-400/90 text-[11px] font-bold text-slate-950 flex items-center justify-center shadow-md shadow-slate-900/60">
+              <div class="absolute left-8 top-5 h-6 w-6 rounded-full bg-lime-400/90 text-[11px] font-bold text-slate-950 flex items-center justify-center shadow-md shadow-slate-900/60">
                 8€
               </div>
-              <div class="absolute right-8 bottom-7 h-5 w-5 rounded-full bg-emerald-400/90 text-[10px] font-semibold text-slate-950 flex items-center justify-center shadow-md shadow-slate-900/60">
-                7,5€
+              <div class="absolute right-6 bottom-5 h-5 w-5 rounded-full bg-emerald-400/90 text-[10px] font-semibold text-slate-950 flex items-center justify-center shadow-md shadow-slate-900/60">
+                7
               </div>
               <div class="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/60 bg-slate-900/60"></div>
             </div>
@@ -121,23 +140,23 @@
             <!-- Liste restos -->
             <div class="space-y-2 text-[11px]">
               <div class="flex items-center justify-between rounded-xl bg-slate-800/80 px-3 py-2">
-                <div>
-                  <p class="font-semibold text-slate-50">Café du Campus</p>
+                <div class="pr-2">
+                  <p class="font-semibold text-slate-50 truncate">Café du Campus</p>
                   <p class="text-[10px] text-slate-300">Plat du jour étudiant • 6 min à pied</p>
                 </div>
                 <div class="text-right">
-                  <p class="font-semibold text-lime-300">7,50&nbsp;€</p>
+                  <p class="font-semibold text-lime-300">7,90&nbsp;€</p>
                   <p class="text-[10px] text-slate-400">midi uniquement</p>
                 </div>
               </div>
 
               <div class="flex items-center justify-between rounded-xl bg-slate-800/60 px-3 py-2">
-                <div>
-                  <p class="font-semibold text-slate-50">Pasta Lab</p>
+                <div class="pr-2">
+                  <p class="font-semibold text-slate-50 truncate">Pasta Lab</p>
                   <p class="text-[10px] text-slate-300">Menu étudiant • 9 min à pied</p>
                 </div>
                 <div class="text-right">
-                  <p class="font-semibold text-lime-300">8&nbsp;€</p>
+                  <p class="font-semibold text-lime-300">8,50&nbsp;€</p>
                   <p class="text-[10px] text-slate-400">végétarien dispo</p>
                 </div>
               </div>
@@ -165,9 +184,9 @@
     </section>
 
     <!-- Section Concept -->
-    <section id="concept" class="space-y-4 py-12 border-t border-white/5">
+    <section id="concept" class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
       <h2 class="text-2xl font-semibold">Comment ça va marcher concrètement&nbsp;?</h2>
-      <p class="max-w-2xl text-sm text-slate-300">
+      <p class="mx-auto md:mx-0 max-w-2xl text-sm text-slate-300">
         Une app pensée pour ta vraie vie d’étudiant, pas pour les pubs. Tu indiques où tu manges
         et où tu étudies, Tipster te montre les bons plans autour, filtrés selon ton budget et ton temps.
       </p>
@@ -195,11 +214,11 @@
     </section>
 
     <!-- Section Fonctionnalités -->
-    <section id="features" class="space-y-4 py-12 border-t border-white/5">
+    <section id="features" class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
       <h2 class="text-2xl font-semibold">Ce que tu trouveras sur Tipster</h2>
 
       <div class="grid gap-4 md:grid-cols-2">
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
           <p class="mb-2 text-sm font-semibold">
             🧭 Mini-map des restos abordables
           </p>
@@ -208,7 +227,7 @@
           </p>
         </div>
 
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
           <p class="mb-2 text-sm font-semibold">
             📍 Infos utiles en un coup d’œil
           </p>
@@ -217,7 +236,7 @@
           </p>
         </div>
 
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
           <p class="mb-2 text-sm font-semibold">
             🎓 Focus rues & quartiers étudiants
           </p>
@@ -226,7 +245,7 @@
           </p>
         </div>
 
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
           <p class="mb-2 text-sm font-semibold">
             ⭐ Recos par les étudiants
           </p>
@@ -238,16 +257,16 @@
     </section>
 
     <!-- Section Pourquoi -->
-    <section class="space-y-4 py-12 border-t border-white/5">
+    <section class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
       <h2 class="text-2xl font-semibold">Pourquoi on crée Tipster&nbsp;?</h2>
-      <div class="grid gap-6 md:grid-cols-[3fr,2fr]">
-        <div class="space-y-3 text-sm text-slate-200">
+      <div class="grid gap-6 md:grid-cols-[3fr,2fr] items-start">
+        <div class="space-y-3 text-sm text-slate-200 max-w-2xl mx-auto md:mx-0">
           <p>
             À Paris, manger dehors quand on est étudiant, ça pique vite : 12–15&nbsp;€ le midi, des
             quartiers ultra chers, et des bons plans dispersés partout.
           </p>
           <p>Avec Tipster, on veut&nbsp;:</p>
-          <ul class="list-disc space-y-1 pl-5 text-slate-200">
+          <ul class="list-disc space-y-1 pl-5 text-left">
             <li>rendre les <span class="font-semibold">bons plans visibles et simples à trouver</span>,</li>
             <li>aider les étudiants à <span class="font-semibold">tenir leur budget</span> sans manger mal,</li>
             <li>mettre en avant les <span class="font-semibold">restos qui jouent le jeu</span> avec des prix corrects.</li>
@@ -259,7 +278,7 @@
 
         <div
           id="ce-que-tu-peux-faire-maintenant"
-          class="rounded-2xl border border-lime-400/40 bg-lime-400/5 p-4 text-sm text-slate-100"
+          class="rounded-2xl border border-lime-400/40 bg-lime-400/5 p-4 text-sm text-slate-100 max-w-md mx-auto md:mx-0"
         >
           <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-lime-300">
             Ce que tu peux faire maintenant
@@ -275,7 +294,7 @@
             href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-4 inline-flex items-center justify-center rounded-full bg-lime-400 px-4 py-1.5 text-xs font-semibold text-slate-950 hover:bg-lime-300 transition"
+            class="mt-4 inline-flex items-center justify-center rounded-full bg-lime-400 px-4 py-1.5 text-xs font-semibold text-slate-950 hover:bg-lime-300 transition w-full"
           >
             Contribuer maintenant via le questionnaire
           </a>
@@ -283,11 +302,44 @@
       </div>
     </section>
 
-   <!-- Section Instagram -->
-    <section id="instagram" class="space-y-4 py-12 border-t border-white/5">
-      <div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+    <!-- Section Contribuer -->
+    <section id="contribuer" class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
+      <h2 class="text-2xl font-semibold">Tu veux voir Tipster sortir plus vite&nbsp;?</h2>
+      <p class="max-w-2xl text-sm text-slate-300 mx-auto md:mx-0">
+        On a besoin de tout le monde, alors à toi de jouer 😉
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+        <a
+          href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
+        >
+          ✍️ Répondre au questionnaire
+        </a>
+        <a
+          href="https://www.instagram.com/tipster.paris/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
+        >
+          📸 Rejoindre Tipster sur Instagram
+        </a>
+        <a
+          href="mailto:tipster.paris25@gmail.com"
+          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
+        >
+          ✉️ Nous contacter par mail
+        </a>
+      </div>
+    </section>
+
+    <!-- Section Instagram -->
+    <section id="instagram" class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
+      <div class="flex flex-col items-center justify-between gap-8 md:flex-row md:items-center">
         <!-- Texte + CTA -->
-        <div class="max-w-xl space-y-3">
+        <div class="max-w-xl space-y-3 mx-auto md:mx-0">
           <h2 class="text-2xl font-semibold">Rejoins Tipster sur Instagram 📸</h2>
           <p class="text-sm text-slate-300">
             On partage les coulisses du projet, des bons plans food repérés à Paris,
@@ -297,9 +349,9 @@
             href="https://www.instagram.com/tipster.paris/"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-emerald-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-lime-400/30 hover:brightness-110 transition"
+            class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-lime-400 to-emerald-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-lime-400/30 hover:brightness-110 transition w-full sm:w-auto"
           >
-            🔗 C'est par ici ! @tipster.paris
+            🔗 Ouvrir @tipster.paris
           </a>
           <p class="text-[11px] text-slate-500">
             Un follow = un coup de pouce pour sortir Tipster plus vite 💚
@@ -307,8 +359,9 @@
         </div>
 
         <!-- Bloc visuel "aperçu" -->
-        <div class="w-full max-w-sm rounded-2xl border border-white/10 bg-white/5 p-4">
+        <div class="w-full max-w-sm rounded-2xl border border-white/10 bg-white/5 p-4 mx-auto md:mx-0">
           <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-300">
+            Aperçu du compte
           </p>
           <div class="aspect-[4/5] w-full overflow-hidden rounded-xl border border-white/10 bg-slate-900/70">
             <img
@@ -320,46 +373,13 @@
         </div>
       </div>
     </section>
-    
-<!-- Section Contribuer -->
-    <section id="contribuer" class="space-y-4 py-12 border-t border-white/5">
-      <h2 class="text-2xl font-semibold">Tu veux voir Tipster sortir plus vite&nbsp;?</h2>
-      <p class="max-w-2xl text-sm text-slate-300">
-        On a besoin de tout le monde, alors à toi de jouer 😉
-      </p>
 
-      <div class="mt-4 flex flex-wrap gap-3">
-        <a
-          href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
-        >
-          ✍️ Réponds au questionnaire
-        </a>
-        <a
-          href="https://www.instagram.com/tipster.paris/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
-        >
-          📸 Rejoins nous sur Instagram
-        </a>
-        <a
-          href="mailto:tipster.paris25@gmail.com"
-          class="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-xs sm:text-sm font-semibold text-slate-950 hover:bg-lime-300 transition"
-        >
-          ✉️ Ecris-nous par mail
-        </a>
-      </div>
-    </section> 
-    
     <!-- FAQ -->
-    <section id="faq" class="space-y-4 py-12 border-t border-white/5">
+    <section id="faq" class="space-y-4 py-10 md:py-12 border-t border-white/5 text-center md:text-left">
       <h2 class="text-2xl font-semibold">FAQ</h2>
 
-      <div class="space-y-4 text-sm text-slate-200">
-        <div>
+      <div class="space-y-4 text-sm text-slate-200 max-w-3xl mx-auto md:mx-0">
+        <div class="text-left">
           <p class="font-semibold">L’app est déjà disponible&nbsp;?</p>
           <p class="text-slate-300">
             Pas encore. On est en phase de repérage et de co-construction avec des étudiants
@@ -367,15 +387,15 @@
           </p>
         </div>
 
-        <div>
+        <div class="text-left">
           <p class="font-semibold">Tipster sera payant&nbsp;?</p>
           <p class="text-slate-300">
-          Pour les étudiants, non. L’accès à la carte restera gratuit. Notre modèle économique
+            Non pour les étudiants. L’accès à la carte restera gratuit. Notre modèle économique
             viendra plus tard, côté partenaires / restos.
           </p>
         </div>
 
-        <div>
+        <div class="text-left">
           <p class="font-semibold">C’est dispo seulement à Paris&nbsp;?</p>
           <p class="text-slate-300">
             On commence par Paris (quartiers étudiants en priorité). Si le concept fonctionne bien,
@@ -383,7 +403,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="text-left">
           <p class="font-semibold">Je suis restaurateur, je peux apparaître sur Tipster&nbsp;?</p>
           <p class="text-slate-300">
             Oui. On cherche des partenaires qui proposent des prix justes pour les étudiants.
@@ -398,7 +418,7 @@
   <!-- Footer -->
   <footer class="border-t border-white/10 bg-slate-800/90">
     <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 justify-center sm:justify-start">
         <img
           src="tipster-logo.png"
           alt="Logo Tipster"
@@ -409,7 +429,7 @@
         </span>
         <span>Fait avec et pour les étudiants.</span>
       </div>
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3 justify-center sm:justify-end">
         <a
           href="mailto:tipster.paris25@gmail.com"
           class="inline-flex items-center justify-center rounded-full border border-white/25 px-3 py-1 hover:border-lime-300 hover:text-lime-300 transition"
@@ -429,10 +449,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
