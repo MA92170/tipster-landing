@@ -12,11 +12,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
-  <!-- Navbar -->
+    <!-- Navbar -->
   <header class="sticky top-0 z-20 border-b border-white/10 bg-slate-800/90 backdrop-blur">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <!-- Logo -->
       <div class="flex items-center gap-2">
-        <!-- Logo Tipster -->
         <img
           src="tipster-logo.png"
           alt="Logo Tipster"
@@ -27,8 +27,8 @@
         </span>
       </div>
 
-      <!-- Desktop nav -->
-      <div class="flex flex-wrap items-center gap-3 text-xs sm:text-sm justify-end">
+      <!-- Menu desktop -->
+      <div class="hidden md:flex items-center gap-6 text-sm">
         <a href="#concept" class="hover:text-lime-300 transition">Concept</a>
         <a href="#features" class="hover:text-lime-300 transition">Fonctionnalités</a>
         <a href="#ce-que-tu-peux-faire-maintenant" class="hover:text-lime-300 transition">Contribuer</a>
@@ -41,8 +41,8 @@
         </a>
       </div>
 
-      <!-- Mobile nav (cta rapides) -->
-      <div class="flex items-center gap-2 md:hidden">
+      <!-- Menu mobile : 2 boutons -->
+      <div class="flex md:hidden items-center gap-2">
         <a
           href="https://forms.gle/Sg5qxVhJZuwSBJBs8"
           target="_blank"
@@ -60,6 +60,7 @@
       </div>
     </nav>
   </header>
+
 
   <main class="mx-auto max-w-6xl px-4">
     <!-- Hero -->
@@ -449,4 +450,5 @@
   </footer>
 </body>
 </html>
+
 
